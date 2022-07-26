@@ -29,7 +29,7 @@ resource "null_resource" "servidor" {
       "mkdir /home/${var.user-ec2}/projetos",
       "cd /home/${var.user-ec2}/projetos",
       "git clone https://github.com/nettaskjr/services.git",
-      "cd services-for-ec2",
+      "cd services",
       "chmod +x *.sh",
       "sudo ./00-run.sh '${var.client}' '${var.host}' '${var.user-ec2}' ${var.apps}",
     ]

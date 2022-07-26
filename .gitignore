@@ -5,7 +5,7 @@
 *.tfvars
 
 # arquivo de trava do terraform
-*.lock.hd
+.terraform.lock.hcl
 
 # .tfstate files
 *.tfstate
