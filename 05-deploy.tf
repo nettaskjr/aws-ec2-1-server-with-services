@@ -25,6 +25,8 @@ resource "null_resource" "servidor" {
   provisioner "remote-exec" {
     inline = [
       "sudo apt update",
+      "sudo apt install git -y",
+      "cd /home/${var.user-ec2}/projetos", # pasta criada pelo script de services
       "git clone https://github.com/nettaskjr/services.git",
       "cd services",
       "chmod +x *.sh",
