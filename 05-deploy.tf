@@ -26,8 +26,7 @@ resource "null_resource" "servidor" {
     inline = [
       "sudo apt update",
       "sudo apt install git -y",
-      "mkdir /home/${var.user-ec2}/projetos",
-      "cd /home/${var.user-ec2}/projetos",
+      "cd /home/${var.user-ec2}/projetos", # pasta criada pelo script de services
       "git clone https://github.com/nettaskjr/services.git",
       "cd services",
       "chmod +x *.sh",
