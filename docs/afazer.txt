@@ -1,0 +1,23 @@
+Criar host remoto (configuracao no S3 no s3 deve-se ativar o modo de historico de arquivos)
+Criar endpoint para S3 e RDS
+Colocar nome e tags nos volumes
+criar tags para os volumes identificando qual ec2
+enviar dados para slack via aws cloudtrail
+enviar logs para o S3
+nome e tag no EBS
+nome e tag na interface de rede (EC2)
+nome e tag nos flow logs
+adaptar os scripts para qualquer SO linux
+
+estudos
+autoscaling sem alb
+
+erros
+verificar com subdominio pq nao redireciona para https
+
+feitos
+Criar as ACLs na VPC
+Colocar flow log
+criar arquivo tfvars com os dados que irão alimentar as variáveis
+baixar a aplicacao
+atualizar ntp para horario de sao paulo
