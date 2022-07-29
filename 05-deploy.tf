@@ -5,7 +5,7 @@ resource "null_resource" "servidor" {
 
   connection {
     type        = "ssh"
-    user        = "${var.user-ec2}"
+    user        = var.user-ec2
     private_key = file("~/.ssh/id_rsa")
     host        = aws_instance.server.public_ip
   }
@@ -26,9 +26,8 @@ resource "null_resource" "servidor" {
     inline = [
       "sudo apt update",
       "sudo apt install git -y",
-      dinstall = "/home/${var.user-ec2}/projetos"
-      [ ! -d "${dinstall}" ] && mkdir "${dinstall}"
-      "cd '${dinstall}'",
+      "[ ! -d '/home/${var.user-ec2}/projetos' ] && mkdir '/home/${var.user-ec2}/projetos'",
+      "cd '/home/${var.user-ec2}/projetos'",
       "git clone https://github.com/nettaskjr/services.git",
       "cd services",
       "chmod +x *.sh",

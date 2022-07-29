@@ -1,7 +1,7 @@
 // subnet
 resource "aws_subnet" "public" {
   vpc_id                  = aws_vpc.vpc.id
-  cidr_block              = "${var.public_cidr}"
+  cidr_block              = var.public_cidr
   availability_zone       = "${var.region}a"
   map_public_ip_on_launch = "true" // indica que as maq iniciadas nessa subnet receberão ip público
 
