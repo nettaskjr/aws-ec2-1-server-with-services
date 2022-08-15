@@ -4,9 +4,6 @@
 # arquivos de dados da aws
 *.tfvars
 
-# arquivo de trava do terraform
-.terraform.lock.hcl
-
 # .tfstate files
 *.tfstate
 *.tfstate.*
