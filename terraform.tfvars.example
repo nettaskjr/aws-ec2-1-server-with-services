@@ -1,0 +1,6 @@
+access_key = "AKIAQOMZJ3YUBAFH7RYL"
+secret_key = "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"
+client     = "CASASBAHIA"
+host       = "casasbahia.com"
+zone_id    = "Z004698199NX7IA6Q1L8"
+apps       = "--wp-nginx-mysql-ssl"
