@@ -27,6 +27,10 @@ variable "apps" {
   description = "Qual(is) apps serão instalados?"
 }
 
+variable "email" {
+  description = "Email usado para registros necessários"
+}
+
 ################################################################################
 
 variable "instance_type" {

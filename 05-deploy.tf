@@ -31,7 +31,7 @@ resource "null_resource" "servidor" {
       "git clone https://github.com/nettaskjr/services.git",
       "cd services",
       "chmod +x *.sh",
-      "sudo ./00-run.sh '${var.client}' '${var.host}' '${var.user-ec2}' ${var.apps}",
+      "sudo ./00-run.sh '${var.client}' '${var.host}' '${var.user-ec2}' '${var.email}' ${var.apps}",
     ]
   }
 
