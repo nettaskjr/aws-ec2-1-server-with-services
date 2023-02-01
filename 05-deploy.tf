@@ -10,18 +10,6 @@ resource "null_resource" "servidor" {
     host        = aws_instance.server.public_ip
   }
 
-  # provisioner "file" {
-  #     source = "services/"
-  #     destination = "/tmp/"
-  # }
-
-  # provisioner "remote-exec" {
-  #     inline = [
-  #         "sudo chmod +x /tmp/pre-req.sh",
-  #         "/tmp/pre-req.sh",
-  #     ]
-  # }
-
   provisioner "remote-exec" {
     inline = [
       "sudo apt update",

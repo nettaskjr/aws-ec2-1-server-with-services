@@ -18,7 +18,7 @@ resource "aws_security_group" "server" {
   }
 
   ingress {
-    from_port   = 80 #http - aceitar apenas do load balancer
+    from_port   = 80 #http
     to_port     = 80
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
