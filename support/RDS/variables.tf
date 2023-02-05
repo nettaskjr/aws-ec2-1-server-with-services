@@ -14,21 +14,21 @@ variable "client" {
   description = "Nome do cliente para informação nas tags"
 }
 
-variable "apps" {
-  description = "Pacotes a serem instalados"
-}
-
-variable "email" {
-  description = "Email usado para registros necessários"
-}
-
 # route 53 -----------------------
 variable "host" {
   description = "Host publico da instância"
 }
 
 variable "zone_id" {
-  description = "Zona do host" #[ ]pegar este dado automaticamente
+  description = "Zone do host"
+}
+
+variable "apps" {
+  description = "Qual(is) apps serão instalados?"
+}
+
+variable "email" {
+  description = "Email usado para registros necessários"
 }
 
 ################################################################################

@@ -10,3 +10,4 @@ resource "aws_key_pair" "acesso" {
   key_name   = "chave-acesso-ssh"
   public_key = file("~/.ssh/id_rsa.pub")
 }
+

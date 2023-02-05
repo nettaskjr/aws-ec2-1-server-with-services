@@ -8,6 +8,10 @@ nome e tag no EBS
 nome e tag na interface de rede (EC2)
 nome e tag nos flow logs
 adaptar os scripts para qualquer SO linux
+para retirar dados da aws use (estude)
+    data "aws_caller_identity" "current"
+
+
 
 estudos
 autoscaling sem alb
@@ -21,3 +25,4 @@ Colocar flow log
 criar arquivo tfvars com os dados que irão alimentar as variáveis
 baixar a aplicacao
 atualizar ntp para horario de sao paulo
+
