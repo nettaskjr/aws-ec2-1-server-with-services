@@ -19,6 +19,7 @@ resource "aws_s3_bucket_acl" "b" {
   acl    = "private"
 }
 
+// versionamento
 resource "aws_s3_bucket_versioning" "versioning_b" {
   bucket = aws_s3_bucket.b.id
   versioning_configuration {
