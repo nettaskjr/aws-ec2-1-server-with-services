@@ -14,6 +14,9 @@ variable "client" {
   description = "Nome do cliente para informação nas tags"
 }
 
+variable "versioning" {
+  description = "Indica se haverá (Enabled) ou não (Disabled) o versionamento no bucket"
+}
 ################################################################################
 
 variable "region" {
